@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.813rem;
+    font-weight: 500;
+}
+
+main {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1.875rem;
+}
+
+.card {
+    border-radius: 0.625rem;
+    padding: 1.25rem 2.188rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.card-title {
+    margin-bottom: auto;
+}
+
+.daniel-card {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background: url('./images//bg-pattern-quotation.svg'), hsl(263, 55%, 52%);
+    background-repeat: no-repeat;
+    background-position: 80% 0, center center;
+}
+
+.jonathan-card {
+    grid-column: 3;
+    grid-row: 1;
+    background: hsl(217, 19%, 35%);
+}
+
+.patrick-card {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.daniel-card .card-profile-name, .jonathan-card .card-profile-name, .patrick-card .card-profile-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.daniel-card .card-title, .jonathan-card .card-title, .patrick-card .card-title {
+    color: hsl(0, 0%, 100%);
+}
+
+.daniel-card .card-profile-title, .jonathan-card .card-profile-title, .patrick-card .card-profile-title {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.daniel-card .card-text, .jonathan-card .card-text, .patrick-card .card-text {
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.jeanette-card {
+    grid-column: 1;
+    grid-row: 2;
+    background: hsl(0, 0%, 100%);
+}
+
+.kira-card {
+    grid-column: 4;
+    grid-row: 1/ span 2;
+    background: hsl(0, 0%, 100%);
+}
+
+.jeanette-card, .kira-card {
+    box-shadow: 1.25rem 1.875rem 1.875rem 0 hsla(219, 29%, 14%, 0.1);
+}
+
+.jeanette-card .card-profile-name, .kira-card .card-profile-name {
+    color: hsl(217, 19%, 35%);
+}
+
+.jeanette-card .card-title, .kira-card .card-title {
+    color: hsl(217, 19%, 35%);
+}
+
+.jeanette-card .card-profile-title, .card-profile-title {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.jeanette-card .card-text, .kira-card .card-text {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+.card-profile {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.card-profile-img {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    border: 0.125rem solid grey;
+}
+
+.card-profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer, footer > a {
+    margin-top: 0.625rem;
+    text-align: center;
+    font-size: 0.938rem;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        padding: 3.125rem 1.875rem;
+    }
+    main {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 1.188rem;
+    }
+    .daniel-card {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .jonathan-card {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .jeanette-card {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .patrick-card {
+        grid-column: 1;
+        grid-row: 5 / span 2;
+    }
+
+    .kira-card {
+        grid-column: 1;
+        grid-row: 7 / span 2;
+    }
+}
