@@ -18,4 +18,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/aveandrian/testimonials-grid-section-main/assets/13519212/603ddece-14fe-42c4-9f4e-8e8a2291ff02)
